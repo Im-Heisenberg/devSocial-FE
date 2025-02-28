@@ -31,10 +31,7 @@ function RequestCard({ user }) {
 		}
 	};
 	return (
-		<div
-			div
-			className="flex gap-4 border border-gray-600 w-96 p-2 rounded-lg shadow-xl"
-		>
+		<div className="flex gap-4 border border-gray-600 w-96 p-2 rounded-lg shadow-xl">
 			<img src={photoUrl} className="h-16 w-16" />
 			<div className="flex w-full justify-between items-center px-2">
 				<div>

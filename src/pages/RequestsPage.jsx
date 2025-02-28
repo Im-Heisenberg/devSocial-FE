@@ -26,7 +26,7 @@ function RequestsPage() {
 			{requests ? (
 				<>
 					{requests.map((item) => (
-						<RequestCard user={item} />
+						<RequestCard user={item} key={item._id} />
 					))}
 				</>
 			) : (
