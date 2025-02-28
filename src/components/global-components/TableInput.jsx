@@ -1,6 +1,6 @@
 import React from "react";
 
-function TableInput({ label, inputValue, inputChange ,labelClasses="" }) {
+function TableInput({ label, inputValue, inputChange, labelClasses = "" }) {
 	return (
 		<label className="form-control w-full max-w-xs">
 			<div className="label">

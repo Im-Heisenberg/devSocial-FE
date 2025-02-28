@@ -10,7 +10,6 @@ const Navbar = () => {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
 	const location = useLocation();
-	console.log(location.pathname);
 	const user = useSelector((store) => store?.user?.loggedUser);
 	const userName = capitalizeFirstLetter(user?.data?.firstname);
 
@@ -67,9 +66,15 @@ const Navbar = () => {
 							</li>
 							{location.pathname.includes("/edit-profile") && (
 								<li>
-									<Link to={'/feed'}>Feed</Link>
+									<Link to={"/feed"}>Feed</Link>
 								</li>
 							)}
+							<li>
+								<Link to={"/connections"}>Connections</Link>
+							</li>
+							<li>
+								<Link to={"/requests"}>Request received</Link>
+							</li>
 							<li>
 								<Link onClick={logoutHandler}>Logout</Link>
 							</li>
